@@ -11,7 +11,7 @@ package edu.ucundi.carrerahilos;
  * @author Eduard Fierro, Arley Rivera
  */
 public class Logica {
-
+    
     Equipo equipo1 = new Equipo("Equipo Rojo");
     Equipo equipo2 = new Equipo("Equipo Azul");
     Equipo equipo3 = new Equipo("Equipo Verde");
@@ -25,7 +25,7 @@ public class Logica {
     Corredor corredor7 = new Corredor(equipo3, 0, "Corredor 1");
     Corredor corredor8 = new Corredor(equipo3, 33, "Corredor 1");
     Corredor corredor9 = new Corredor(equipo3, 66, "Corredor 1");
-
+    
     public Logica() {
 
     }
@@ -33,6 +33,7 @@ public class Logica {
     /**
      * Metodo usado para ejecutar los hilos
      */
+    
     public void comienza() {
         corredor1.start();
         corredor2.start();

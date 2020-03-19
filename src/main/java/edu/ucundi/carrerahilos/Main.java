@@ -10,7 +10,10 @@ package edu.ucundi.carrerahilos;
  * @author Eduard Fierro, Arley Rivera
  */
 public class Main {
-
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String args[]) {
 
         Logica inicio = new Logica();

@@ -7,56 +7,92 @@ import java.util.logging.Logger;
  *  Clase que alamacena el corredor con sus tipos de variables
  * @author Eduard Fierro, Arley Rivera 
  */
+
 public class Corredor extends Thread {
-    //Variables staticas usadas para los colores
+    /**
+     * Variables staticas usadas para los colores
+     */
+    
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_BLACK = "\u001B[30m";
-    //Variable que almacena el equipo al que pertenece el corredor 
+    
+    /**
+     * Variable que almacena el equipo al que pertenece el corredor 
+     */
     Equipo equipo;
-    //Variable que almacena la posicion inicial del corredor esto se usa para
-    //poder saber en que posicio  debe empezar el corredor si como el primero en
-    //salio el del medio o el ultimo
+    /**
+     * Variable que almacena la posicion inicial del corredor esto se usa para
+     * poder saber en que posicio  debe empezar el corredor si como el primero en
+     * salio el del medio o el ultimo
+     */
+    
     private int posicion;
-    //Variable que guarda el nombre del corredor 
+     
+    /**
+     * Variable que guarda el nombre del corredor
+     */
     private String nombre;
-    //Constructor de la clase
+    /**
+     * Constructor de la clase
+     * @param equipo
+     * @param posicion
+     * @param nombre 
+     */
     public Corredor(Equipo equipo, int posicion, String nombre) {
         this.equipo = equipo;
         this.posicion = posicion;
         this.nombre = nombre;
     }
-    
+    /**
+     * 
+     * @return 
+     */
     public Equipo getEquipo() {
         return equipo;
     }
-
+    /**
+     * 
+     * @param equipo 
+     */
     public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public int getPosicion() {
         return posicion;
     }
-
+    /**
+     * 
+     * @param posicion 
+     */
     public void setPosicion(byte posicion) {
         this.posicion = posicion;
     }
 
-
+    /**
+     * 
+     * @return 
+     */
     public String getNombre() {
         return nombre;
     }
-
+    /**
+     * 
+     * @param nombre 
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    /*
     
-    */
+    /**
+     * 
+     */
     @Override
     public void run() {
         if (posicion == 0) {

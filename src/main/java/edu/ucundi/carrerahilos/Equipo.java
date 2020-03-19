@@ -9,14 +9,22 @@ package edu.ucundi.carrerahilos;
  *  Clase que guarda los valores de un equipo
  * @author Eduard Fierro, Arley Rivera
  */
+
 public class Equipo {
-    //Variables estaticas que guardan colores
+   
+    /**
+     * Variables estaticas que guardan colores 
+     */
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLUE = "\u001B[34m";
-    //Variable que guarda el nombre del equipo
+    /**
+     * Variable que guarda el nombre del equipo
+     */
     private String nombreEquipo;
-    //Variable que gusrada la posicion anterios de un corredor
+    /**
+     * Variable que gusrada la posicion anterios de un corredor
+     */
     private int anterior;
     /**
      * Contructor de la clase
@@ -51,19 +59,31 @@ public class Equipo {
         return imprimir;
         
     }
-    
+    /**
+     * 
+     * @return 
+     */
     public String getNombreEquipo() {
         return nombreEquipo;
     }
-
+    /**
+     * 
+     * @param nombre 
+     */
     public void setNombreEquipo(String nombre) {
         this.nombreEquipo = nombreEquipo;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public int getAnterior() {
         return anterior;
     }
-
+    /**
+     * 
+     * @param anterior 
+     */
     public void setAnterior(int anterior) {
         this.anterior = anterior;
     }
